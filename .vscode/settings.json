@@ -1,0 +1,12 @@
+{
+    "python.analysis.extraPaths": [
+        "D:/TRAMPOS/Carvalho - NeuralChat/Código/Consumer--NEURALCHAT-/NeuralChat"
+    ],
+    "files.exclude": {
+        "**/*.pyc": {
+            "when": "$(basename).ext"
+        },
+        "**/__pycache__": true,
+        "**/*.pytest_cache": true
+    }
+}
