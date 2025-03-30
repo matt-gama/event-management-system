@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from app.core.database import init_db
+from app.routes.users import router as users
+
 
 app = FastAPI()
 
@@ -10,3 +12,5 @@ async def startup_event():
 @app.get('/')
 async def main():
     return {"message": "Welcome the Event Menagement System", "version": ""}
+
+app.include_router(router=users, prefix='/api/v1/user')
